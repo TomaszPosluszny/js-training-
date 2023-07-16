@@ -224,3 +224,27 @@ function removeWhitespace(stringsArray) {
 let array3 = ['  string 1 ', ' string 2 ', '  string 3 '];
 let newArray = removeWhitespace(array3);
 console.log(newArray);
+
+//includes()
+
+//Task 1: Checking if an element is present in an array
+
+const arrayNumber = [1, 2, 3, 4, 5];
+const elementNumber = 3;
+
+if (arrayNumber.includes(elementNumber)) {
+  console.log("The element is present in the array.");
+} else {
+  console.log("The element is not present in the array.");
+}
+
+//Task 2: Checking if a string contains a substring
+
+const string = "Good morning!";
+const substring = "morning";
+
+if (string.includes(substring)) {
+  console.log("The string contains the substring.");
+} else {
+  console.log("The string does not contain the substring.");
+}
