@@ -248,3 +248,22 @@ if (string.includes(substring)) {
 } else {
   console.log("The string does not contain the substring.");
 }
+
+//substring()
+
+//Task 1: Extracting a substring from a string
+
+const str2 = "Hello, World!";
+const startIndex = 7;
+const endIndex = 12;
+
+const extractedSubstring = str2.substring(startIndex, endIndex);
+console.log(extractedSubstring);
+
+//Task 2: Extracting the last characters from a string
+
+const str1 = "Hello, World!";
+const n = 6;
+
+const extractedSubstring1 = str1.substring(str1.length - n);
+console.log(extractedSubstring1);
