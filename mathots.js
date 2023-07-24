@@ -267,3 +267,24 @@ const n = 6;
 
 const extractedSubstring1 = str1.substring(str1.length - n);
 console.log(extractedSubstring1);
+
+//startsWith()
+
+// Task 1: Checking if a string starts with a specific prefix
+
+const str3 = "Hello, World!";
+const prefix = "Hello";
+
+if (str3.startsWith(prefix)) {
+  console.log("The string starts with the prefix.");
+} else {
+  console.log("The string does not start with the prefix.");
+}
+
+//Task 2: Selecting elements based on a prefix
+
+const words = ["apple", "banana", "orange", "grape"];
+const prefix1 = "b";
+
+const wordsWithPrefix = words.filter(word => word.startsWith(prefix1));
+console.log(wordsWithPrefix);
