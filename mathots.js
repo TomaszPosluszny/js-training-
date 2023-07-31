@@ -288,3 +288,24 @@ const prefix1 = "b";
 
 const wordsWithPrefix = words.filter(word => word.startsWith(prefix1));
 console.log(wordsWithPrefix);
+
+//endsWith()
+
+//Task 1: Checking if a string ends with a specific suffix.
+
+const str5 = "Hello, World!";
+const suffixx = "World!";
+
+if (str5.endsWith(suffixx)) {
+  console.log("The string ends with the suffix.");
+} else {
+  console.log("The string does not end with the suffix.");
+}
+
+//Task 2: Selecting elements based on a suffix.
+
+const wordss = ["apple", "banana", "orange", "grape"];
+const suffix = "ana";
+
+const wordsWithSuffix = wordss.filter(word => word.endsWith(suffix));
+console.log(wordsWithSuffix);
