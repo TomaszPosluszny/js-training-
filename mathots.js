@@ -233,27 +233,27 @@ const arrayNumber = [1, 2, 3, 4, 5];
 const elementNumber = 3;
 
 if (arrayNumber.includes(elementNumber)) {
-  console.log("The element is present in the array.");
+	console.log('The element is present in the array.');
 } else {
-  console.log("The element is not present in the array.");
+	console.log('The element is not present in the array.');
 }
 
 //Task 2: Checking if a string contains a substring
 
-const string = "Good morning!";
-const substring = "morning";
+const string = 'Good morning!';
+const substring = 'morning';
 
 if (string.includes(substring)) {
-  console.log("The string contains the substring.");
+	console.log('The string contains the substring.');
 } else {
-  console.log("The string does not contain the substring.");
+	console.log('The string does not contain the substring.');
 }
 
 //substring()
 
 //Task 1: Extracting a substring from a string
 
-const str2 = "Hello, World!";
+const str2 = 'Hello, World!';
 const startIndex = 7;
 const endIndex = 12;
 
@@ -262,7 +262,7 @@ console.log(extractedSubstring);
 
 //Task 2: Extracting the last characters from a string
 
-const str1 = "Hello, World!";
+const str1 = 'Hello, World!';
 const n = 6;
 
 const extractedSubstring1 = str1.substring(str1.length - n);
@@ -272,40 +272,59 @@ console.log(extractedSubstring1);
 
 // Task 1: Checking if a string starts with a specific prefix
 
-const str3 = "Hello, World!";
-const prefix = "Hello";
+const str3 = 'Hello, World!';
+const prefix = 'Hello';
 
 if (str3.startsWith(prefix)) {
-  console.log("The string starts with the prefix.");
+	console.log('The string starts with the prefix.');
 } else {
-  console.log("The string does not start with the prefix.");
+	console.log('The string does not start with the prefix.');
 }
 
 //Task 2: Selecting elements based on a prefix
 
-const words = ["apple", "banana", "orange", "grape"];
-const prefix1 = "b";
+const words = ['apple', 'banana', 'orange', 'grape'];
+const prefix1 = 'b';
 
-const wordsWithPrefix = words.filter(word => word.startsWith(prefix1));
+const wordsWithPrefix = words.filter((word) => word.startsWith(prefix1));
 console.log(wordsWithPrefix);
 
 //endsWith()
 
 //Task 1: Checking if a string ends with a specific suffix.
 
-const str5 = "Hello, World!";
-const suffixx = "World!";
+const str5 = 'Hello, World!';
+const suffixx = 'World!';
 
 if (str5.endsWith(suffixx)) {
-  console.log("The string ends with the suffix.");
+	console.log('The string ends with the suffix.');
 } else {
-  console.log("The string does not end with the suffix.");
+	console.log('The string does not end with the suffix.');
 }
 
 //Task 2: Selecting elements based on a suffix.
 
-const wordss = ["apple", "banana", "orange", "grape"];
-const suffix = "ana";
+const wordss = ['apple', 'banana', 'orange', 'grape'];
+const suffix = 'ana';
 
-const wordsWithSuffix = wordss.filter(word => word.endsWith(suffix));
+const wordsWithSuffix = wordss.filter((word) => word.endsWith(suffix));
 console.log(wordsWithSuffix);
+
+//toLocaleUpperCase()
+
+//Task 1: Converting text to uppercase in the appropriate language.
+
+const text1 = 'wielka litera';
+const language1 = 'pl';
+
+const upperCaseText = text1.toLocaleUpperCase(language1);
+console.log(upperCaseText);
+
+
+//Task 2: Selecting elements based on uppercase letters.
+
+const fruits1 = ["apple", "Banana", "Orange", "grape"];
+const language = "en";
+
+const wordsWithUpperCase = fruits1.filter(word => word[0].toLocaleUpperCase(language) === word[0]);
+console.log(wordsWithUpperCase);
