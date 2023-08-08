@@ -320,11 +320,30 @@ const language1 = 'pl';
 const upperCaseText = text1.toLocaleUpperCase(language1);
 console.log(upperCaseText);
 
-
 //Task 2: Selecting elements based on uppercase letters.
 
-const fruits1 = ["apple", "Banana", "Orange", "grape"];
-const language = "en";
+const fruits1 = ['apple', 'Banana', 'Orange', 'grape'];
+const language = 'en';
 
-const wordsWithUpperCase = fruits1.filter(word => word[0].toLocaleUpperCase(language) === word[0]);
+const wordsWithUpperCase = fruits1.filter(
+	(word) => word[0].toLocaleUpperCase(language) === word[0]
+);
 console.log(wordsWithUpperCase);
+
+// toLocaleUpperCase()
+
+//Task 1: Capitalizing Names in Different Languages.
+
+const names = ["maria", "juan", "emily", "hans"];
+const language3 = "es"; // Spanish
+
+const capitalizedNames = names.map(name => name.toLocaleUpperCase(language3));
+console.log(capitalizedNames);
+
+//Task 2: Formatting Currency Values.
+
+const prices = [10.99, 25.5, 5.75, 100.0];
+const locale = "de-DE"; // German (Germany)
+
+const formattedPrices = prices.map(price => price.toLocaleString(locale, { style: "currency", currency: "EUR" }));
+console.log(formattedPrices);
