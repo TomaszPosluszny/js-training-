@@ -334,16 +334,39 @@ console.log(wordsWithUpperCase);
 
 //Task 1: Capitalizing Names in Different Languages.
 
-const names = ["maria", "juan", "emily", "hans"];
-const language3 = "es"; // Spanish
+const names = ['maria', 'juan', 'emily', 'hans'];
+const language3 = 'es'; // Spanish
 
-const capitalizedNames = names.map(name => name.toLocaleUpperCase(language3));
+const capitalizedNames = names.map((name) => name.toLocaleUpperCase(language3));
 console.log(capitalizedNames);
 
 //Task 2: Formatting Currency Values.
 
 const prices = [10.99, 25.5, 5.75, 100.0];
-const locale = "de-DE"; // German (Germany)
+const locale = 'de-DE'; // German (Germany)
 
-const formattedPrices = prices.map(price => price.toLocaleString(locale, { style: "currency", currency: "EUR" }));
+const formattedPrices = prices.map((price) =>
+	price.toLocaleString(locale, { style: 'currency', currency: 'EUR' })
+);
 console.log(formattedPrices);
+
+//toString()
+
+//Task 1: Converting a Number to a String.
+
+const number = 42;
+const numberAsString = number.toString();
+
+console.log('Number as string:', numberAsString);
+console.log('Type of numberAsString:', typeof numberAsString);
+
+//Task 2: Converting an Array to a String with a Custom Separator.
+
+const fruits4 = ['apple', 'banana', 'orange', 'grape'];
+const separator = ' | ';
+
+const fruitsAsString = fruits4.toString();
+const fruitsWithSeparator = fruits4.join(separator);
+
+console.log('Fruits as comma-separated string:', fruitsAsString);
+console.log('Fruits with custom separator:', fruitsWithSeparator);
