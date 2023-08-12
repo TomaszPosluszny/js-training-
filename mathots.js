@@ -370,3 +370,24 @@ const fruitsWithSeparator = fruits4.join(separator);
 
 console.log('Fruits as comma-separated string:', fruitsAsString);
 console.log('Fruits with custom separator:', fruitsWithSeparator);
+
+//toFixed()
+
+//Formatting Decimal Places in a Number.
+
+
+const number6 = 123.456789;
+const decimalPlaces = 2;
+
+const formattedNumber = number6.toFixed(decimalPlaces);
+console.log("Formatted number:", formattedNumber);
+
+//Task 2: Calculating the Total Price with Specific Decimals.
+
+const prices3= [10.99, 25.5, 5.75, 100.0];
+const decimalPlaces1 = 2;
+
+const totalPrice = prices3.reduce((sum, price) => sum + price, 0);
+const formattedTotalPrice = totalPrice.toFixed(decimalPlaces1);
+
+console.log("Total price:", formattedTotalPrice);
