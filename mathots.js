@@ -375,19 +375,36 @@ console.log('Fruits with custom separator:', fruitsWithSeparator);
 
 //Formatting Decimal Places in a Number.
 
-
 const number6 = 123.456789;
 const decimalPlaces = 2;
 
 const formattedNumber = number6.toFixed(decimalPlaces);
-console.log("Formatted number:", formattedNumber);
+console.log('Formatted number:', formattedNumber);
 
 //Task 2: Calculating the Total Price with Specific Decimals.
 
-const prices3= [10.99, 25.5, 5.75, 100.0];
+const prices3 = [10.99, 25.5, 5.75, 100.0];
 const decimalPlaces1 = 2;
 
 const totalPrice = prices3.reduce((sum, price) => sum + price, 0);
 const formattedTotalPrice = totalPrice.toFixed(decimalPlaces1);
 
-console.log("Total price:", formattedTotalPrice);
+console.log('Total price:', formattedTotalPrice);
+
+//parseInt()
+
+//Task 1: Converting a String to an Integer.
+
+const numericString = '42';
+const integerValue = parseInt(numericString);
+
+console.log('Integer value:', integerValue);
+console.log('Type of integerValue:', typeof integerValue);
+
+
+//Task 2: Converting Binary String to Integer.
+
+const binaryString = "101010";
+const integerValue1 = parseInt(binaryString, 2);
+
+console.log("Integer value:", integerValue1);
