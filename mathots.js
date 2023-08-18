@@ -401,10 +401,28 @@ const integerValue = parseInt(numericString);
 console.log('Integer value:', integerValue);
 console.log('Type of integerValue:', typeof integerValue);
 
-
 //Task 2: Converting Binary String to Integer.
 
-const binaryString = "101010";
+const binaryString = '101010';
 const integerValue1 = parseInt(binaryString, 2);
 
-console.log("Integer value:", integerValue1);
+console.log('Integer value:', integerValue1);
+
+// parseFloat(string)
+
+// Task 1: Converting a String to a Floating-Point Number.
+
+
+const floatString = "3.14";
+const floatValue = parseFloat(floatString);
+
+console.log("Floating-point value:", floatValue);
+console.log("Type of floatValue:", typeof floatValue);
+
+//Task 2: Extracting Price from a String.
+
+const description = "The price is $19.99.";
+const priceString = description.match(/\d+\.\d+/)[0];
+const priceValue = parseFloat(priceString);
+
+console.log("Extracted price:", priceValue);
