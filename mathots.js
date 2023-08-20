@@ -412,17 +412,33 @@ console.log('Integer value:', integerValue1);
 
 // Task 1: Converting a String to a Floating-Point Number.
 
-
-const floatString = "3.14";
+const floatString = '3.14';
 const floatValue = parseFloat(floatString);
 
-console.log("Floating-point value:", floatValue);
-console.log("Type of floatValue:", typeof floatValue);
+console.log('Floating-point value:', floatValue);
+console.log('Type of floatValue:', typeof floatValue);
 
 //Task 2: Extracting Price from a String.
 
-const description = "The price is $19.99.";
+const description = 'The price is $19.99.';
 const priceString = description.match(/\d+\.\d+/)[0];
 const priceValue = parseFloat(priceString);
 
-console.log("Extracted price:", priceValue);
+console.log('Extracted price:', priceValue);
+
+//isArray()
+
+//Task 1: Checking if a Variable is an Array.
+
+const value1 = [1, 2, 3];
+const value2 = 'Hello, World!';
+
+console.log('Is value1 an array?', Array.isArray(value1));
+console.log('Is value2 an array?', Array.isArray(value2));
+
+//Task 2: Filtering Non-Array Values from an Array.
+
+const mixedValues = [1, 'apple', [2, 3], 'banana', [4, 5], 'grape'];
+
+const arraysOnly = mixedValues.filter((value) => Array.isArray(value));
+console.log('Arrays only:', arraysOnly);
