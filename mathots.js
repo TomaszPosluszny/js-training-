@@ -442,3 +442,25 @@ const mixedValues = [1, 'apple', [2, 3], 'banana', [4, 5], 'grape'];
 
 const arraysOnly = mixedValues.filter((value) => Array.isArray(value));
 console.log('Arrays only:', arraysOnly);
+
+//push()
+
+//Task 1: Adding an Element to an Array.
+
+const numbers6 = [1, 2, 3, 4];
+const newNumber = 5;
+
+numbers6.push(newNumber);
+
+console.log('Updated numbers array:', numbers6);
+
+//Task 2: Creating a Shopping List.
+
+const shoppingList = [];
+
+shoppingList.push('Apple');
+shoppingList.push('Banana');
+shoppingList.push('Milk');
+shoppingList.push('Bread');
+
+console.log('Shopping list:', shoppingList);
