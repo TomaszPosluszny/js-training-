@@ -464,3 +464,26 @@ shoppingList.push('Milk');
 shoppingList.push('Bread');
 
 console.log('Shopping list:', shoppingList);
+
+//pop()
+
+//Task 1: Removing the Last Element from an Array.
+
+const fruitsBig = ["apple", "banana", "orange", "grape"];
+
+const removedFruit = fruitsBig.pop();
+
+console.log("Removed fruit:", removedFruit);
+console.log("Updated fruits array:", fruits);
+
+//Task 2: Retrieving and Processing Elements from the End of an Array.
+
+const numbers10 = [1, 2, 3, 4, 5];
+const reversedNumbers = [];
+
+while (numbers10.length > 0) {
+  const poppedNumber = numbers10.pop();
+  reversedNumbers.push(poppedNumber);
+}
+
+console.log("Reversed numbers:", reversedNumbers);
