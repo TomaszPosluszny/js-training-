@@ -469,12 +469,12 @@ console.log('Shopping list:', shoppingList);
 
 //Task 1: Removing the Last Element from an Array.
 
-const fruitsBig = ["apple", "banana", "orange", "grape"];
+const fruitsBig = ['apple', 'banana', 'orange', 'grape'];
 
 const removedFruit = fruitsBig.pop();
 
-console.log("Removed fruit:", removedFruit);
-console.log("Updated fruits array:", fruits);
+console.log('Removed fruit:', removedFruit);
+console.log('Updated fruits array:', fruits);
 
 //Task 2: Retrieving and Processing Elements from the End of an Array.
 
@@ -482,8 +482,31 @@ const numbers10 = [1, 2, 3, 4, 5];
 const reversedNumbers = [];
 
 while (numbers10.length > 0) {
-  const poppedNumber = numbers10.pop();
-  reversedNumbers.push(poppedNumber);
+	const poppedNumber = numbers10.pop();
+	reversedNumbers.push(poppedNumber);
 }
 
-console.log("Reversed numbers:", reversedNumbers);
+console.log('Reversed numbers:', reversedNumbers);
+
+//shift()
+
+//Task 1: Removing the First Element from an Array.
+
+const fruits7 = ["apple", "banana", "orange", "grape"];
+
+const removedFruit5 = fruits.shift();
+
+console.log("Removed fruit:", removedFruit5);
+console.log("Updated fruits array:", fruits7);
+
+//Task 2: Processing Elements from the Beginning of an Array.
+
+const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+const firstTwoWeekdays = [];
+
+while (weekdays.length > 0 && firstTwoWeekdays.length < 2) {
+  const shiftedDay = weekdays.shift();
+  firstTwoWeekdays.push(shiftedDay);
+}
+
+console.log("First two weekdays:", firstTwoWeekdays);
