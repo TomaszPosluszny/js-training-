@@ -510,3 +510,28 @@ while (weekdays.length > 0 && firstTwoWeekdays.length < 2) {
 }
 
 console.log("First two weekdays:", firstTwoWeekdays);
+
+//unshift()
+
+//Task 1: Adding Elements to the Beginning of an Array.
+
+const numbersAdd = [3, 4, 5];
+const addedNumbers = [1, 2];
+
+numbersAdd.unshift(...addedNumbers);
+
+console.log("Updated numbers array:", numbers);
+
+//Task 2: Building a Priority Queue.
+
+const priorityQueue = [];
+
+function enqueueWithPriority(item, priority) {
+  priorityQueue.unshift({ item, priority });
+}
+
+enqueueWithPriority("Task A", 2);
+enqueueWithPriority("Task B", 1);
+enqueueWithPriority("Task C", 3);
+
+console.log("Priority Queue:", priorityQueue);
