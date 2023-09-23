@@ -535,3 +535,28 @@ enqueueWithPriority("Task B", 1);
 enqueueWithPriority("Task C", 3);
 
 console.log("Priority Queue:", priorityQueue);
+
+//reverse()
+
+
+//Task 2: Creating a Palindrome from a String.
+
+const numbers21 = [1, 2, 3, 4, 5];
+
+numbers21.reverse();
+
+console.log("Reversed numbers array:", numbers);
+
+//Task 2: Creating a Palindrome from a String.
+
+const originalString = "radar";
+const reversedString1 = originalString.split('').reverse().join('');
+
+console.log("Original string:", originalString);
+console.log("Reversed string:", reversedString1);
+
+if (originalString === reversedString1) {
+  console.log("It's a palindrome!");
+} else {
+  console.log("It's not a palindrome.");
+}
