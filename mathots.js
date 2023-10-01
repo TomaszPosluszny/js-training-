@@ -560,3 +560,25 @@ if (originalString === reversedString1) {
 } else {
   console.log("It's not a palindrome.");
 }
+
+//sort()
+
+//Task 1: Sorting Numbers in Ascending Order.
+
+const numbers23 = [5, 2, 9, 1, 5];
+
+numbers23.sort(function(a, b) {
+  return a - b;
+});
+
+console.log("Sorted numbers array (ascending order):", numbers);
+
+//Task 2: Sorting Strings by Length.
+
+const words23 = ["apple", "orange", "banana", "kiwi", "grape"];
+
+words23.sort(function(a, b) {
+  return a.length - b.length;
+});
+
+console.log("Sorted words array (by length):", words);
