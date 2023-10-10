@@ -582,3 +582,26 @@ words23.sort(function(a, b) {
 });
 
 console.log("Sorted words array (by length):", words);
+
+
+//splice()
+
+//Task 1: Removing Elements from an Array Using splice()
+
+let array21= [1, 2, 3, 4, 5];
+let indexToRemove = 2; 
+
+array.splice(indexToRemove, 1); 
+
+console.log(array21); 
+
+//Task 2: Adding and Replacing Elements in an Array Using splice()
+
+let array22 = [1, 2, 3, 4, 5];
+let indexToAdd = 2; 
+let elementsToRemove = 1; 
+let newElement = 10;
+
+array.splice(indexToAdd, elementsToRemove, newElement);
+
+console.log(array22);
