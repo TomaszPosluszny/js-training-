@@ -605,3 +605,28 @@ let newElement = 10;
 array.splice(indexToAdd, elementsToRemove, newElement);
 
 console.log(array22);
+
+//indexOf()
+
+//Task1: Check if an element exists in an array.
+
+const tablica24 = [1, 2, 3, 4, 5];
+const element24 = 3;
+
+if (tablica24.indexOf(element24) !== -1) {
+  console.log("Element znajduje się w tablicy.");
+} else {
+  console.log("Element nie znajduje się w tablicy.");
+}
+
+//Task 2: Find the index of the first occurrence of a specific letter in a string.
+
+const tekst43 = "Przykładowy tekst";
+const litera43 = "y";
+
+const indeks = tekst43.indexOf(litera43);
+if (indeks !== -1) {
+  console.log(`Indeks pierwszego wystąpienia litery "${litera43}" to ${indeks43}.`);
+} else {
+  console.log(`Litera "${litera43}" nie występuje w tekście.`);
+}
