@@ -1,6 +1,5 @@
 # Learning JS - learning the various elements of JavaScript
 
-
 ## I train use
 - variables
 - data Types
